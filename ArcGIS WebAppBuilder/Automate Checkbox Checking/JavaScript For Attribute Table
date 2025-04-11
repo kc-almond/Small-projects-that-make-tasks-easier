@@ -1,0 +1,87 @@
+// Function to check checkboxes based on rowid attribute
+function checkCheckboxesByRowId(rowId) {
+    // Find the row with the specified rowid
+    var row = document.querySelector('tr[rowid="' + rowId + '"]');
+    
+    if (row) {
+        // Find checkboxes within the row
+        var checkboxes = row.querySelectorAll('.jimu-checkbox');
+        
+        checkboxes.forEach(function(checkbox) {
+            // Check if the checkbox is not already checked
+            if (checkbox.getAttribute('aria-checked') === 'false') {
+                checkbox.setAttribute('aria-checked', 'true');
+                
+                var innerCheckbox = checkbox.querySelector('.checkbox');
+                if (innerCheckbox) {
+                    innerCheckbox.classList.remove('jimu-icon-checkbox');
+                    innerCheckbox.classList.add('jimu-icon-checked');
+                    
+                    // Simulate click event on inner checkbox
+                    innerCheckbox.click();
+                    
+                    // Dispatch change event to checkbox
+                    checkbox.dispatchEvent(new Event('change'));
+                }
+            }
+        });
+    }
+}
+
+// Note that you have to identify the constant RowId
+checkCheckboxesByRowId('row13');
+checkCheckboxesByRowId('row15');
+checkCheckboxesByRowId('row16');
+checkCheckboxesByRowId('row18');
+checkCheckboxesByRowId('row19');
+checkCheckboxesByRowId('row21');
+checkCheckboxesByRowId('row22');
+checkCheckboxesByRowId('row25');
+checkCheckboxesByRowId('row26');
+checkCheckboxesByRowId('row27');
+checkCheckboxesByRowId('row28');
+checkCheckboxesByRowId('row29');
+checkCheckboxesByRowId('row30');
+checkCheckboxesByRowId('row31');
+checkCheckboxesByRowId('row32');
+checkCheckboxesByRowId('row33');
+checkCheckboxesByRowId('row34');
+checkCheckboxesByRowId('row36');
+checkCheckboxesByRowId('row39');
+checkCheckboxesByRowId('row41');
+checkCheckboxesByRowId('row42');
+checkCheckboxesByRowId('row43');
+checkCheckboxesByRowId('row44');
+checkCheckboxesByRowId('row45');
+checkCheckboxesByRowId('row46');
+checkCheckboxesByRowId('row48');
+checkCheckboxesByRowId('row49');
+checkCheckboxesByRowId('row50');
+checkCheckboxesByRowId('row51');
+checkCheckboxesByRowId('row55');
+checkCheckboxesByRowId('row56');
+checkCheckboxesByRowId('row58');
+checkCheckboxesByRowId('row59');
+checkCheckboxesByRowId('row60');
+checkCheckboxesByRowId('row61');
+checkCheckboxesByRowId('row63');
+checkCheckboxesByRowId('row65');
+checkCheckboxesByRowId('row66');
+checkCheckboxesByRowId('row67');
+checkCheckboxesByRowId('row73');
+checkCheckboxesByRowId('row74');
+checkCheckboxesByRowId('row75');
+checkCheckboxesByRowId('row76');
+checkCheckboxesByRowId('row77');
+checkCheckboxesByRowId('row79');
+checkCheckboxesByRowId('row82');
+checkCheckboxesByRowId('row89');
+checkCheckboxesByRowId('row90');
+checkCheckboxesByRowId('row95');
+checkCheckboxesByRowId('row99');
+checkCheckboxesByRowId('row102');
+checkCheckboxesByRowId('row103');
+checkCheckboxesByRowId('row106');
+checkCheckboxesByRowId('row107');
+checkCheckboxesByRowId('row166');
+checkCheckboxesByRowId('row167');
