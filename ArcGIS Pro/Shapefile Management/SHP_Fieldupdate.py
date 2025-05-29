@@ -4,7 +4,7 @@ import time
 from datetime import datetime
 
 # Input/output folders
-input_folder = r"D:\02 KCA\02 Project 4\Modelling\To Fix Files\Bohol"
+input_folder = r"D:\Your\Folder\Path"
 output_folder = os.path.join(input_folder, "renamed_shapefiles")
 os.makedirs(output_folder, exist_ok=True)
 
