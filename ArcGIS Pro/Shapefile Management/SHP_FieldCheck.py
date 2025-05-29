@@ -2,7 +2,7 @@ import os
 import fiona
 
 # Folder with shapefiles
-input_folder = r"D:\02 KCA\02 Project 4\Modelling\IlocosSur\SA\Ilocos_Sur_SA_E\#Output\#OQ_ChiouYoungs2014\SHP_Files"
+input_folder = r"D:\Your\Folder\Path"
 
 # Scan for shapefiles
 shapefiles = [f for f in os.listdir(input_folder) if f.endswith(".shp")]
